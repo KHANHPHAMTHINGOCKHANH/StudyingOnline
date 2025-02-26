@@ -232,7 +232,6 @@ a {
 
 
 .hero-right {
-    /* width: 55%; */
     position: relative;
 }
 .main {
@@ -365,21 +364,21 @@ a {
 .badge-icon img, .badge-img {
   width: 20px;
   height: 20px;
-  border-radius: 0; /* Loại bỏ bo tròn của hình ảnh */
-  object-fit: contain; /* Đảm bảo hình ảnh hiển thị đúng tỷ lệ */
+  border-radius: 0; 
+  object-fit: contain;
 }
 .badge-chart img.badge-img {
   width: 20px;
   height: 20px;
-  border-radius: 0; /* Loại bỏ bo tròn cho hình ảnh */
+  border-radius: 0; 
   object-fit: contain;
 }
 .badge-notification {
   top: 45%;
-  right: 5%; /* Giảm giá trị right để dịch sang phải */
-  /* hoặc */
+  right: 5%; 
+ 
   right: 5%;
-  transform: translateX(25px); /* Dịch sang phải 20px */
+  transform: translateX(25px); 
 
   display: flex;
   align-items: center;
@@ -390,7 +389,7 @@ a {
 }
 .badge-class {
   bottom: 24%;
-  left: 1%; /* Thay đổi từ -3% thành giá trị dương để không bị cắt bên trái */
+  left: 1%; 
   display: flex;
   align-items: flex-start;
   gap: 15px;
@@ -401,11 +400,11 @@ a {
 }
 
 .student-image {
-  overflow: visible; /* Đảm bảo phần tử con không bị cắt */
+  overflow: visible; 
 }
 
 .hero-right {
-  overflow: visible; /* Đảm bảo phần tử con không bị cắt */
+  overflow: visible; 
 }
 
 .badge-class img{
@@ -681,11 +680,11 @@ a {
 }
 
 .features-container .feature-card:nth-child(3) .feature-description {
-  font-size: 13px; /* Giảm xuống để giống hình bên trái */
+  font-size: 13px; 
   color: #696984;
-  line-height: 1.8; /* Điều chỉnh chiều cao dòng */
-  margin-top: 25px; /* Xích xuống thêm một chút */
-  text-align:center; /* Canh trái */
+  line-height: 1.8; 
+  margin-top: 25px; 
+  text-align:center; 
   margin: 20px;
  
 }
@@ -696,7 +695,6 @@ a {
   margin: 10px;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
     .features-container {
         flex-direction: column;
@@ -711,12 +709,6 @@ a {
 
 
 
-
-
-
-
-
-/* What is Skilline Section */
 .what-is-section {
     padding: 80px 0;
     text-align: center;
@@ -819,7 +811,6 @@ a {
     color: #29B9E7;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
     .user-cards {
         flex-direction: column;
@@ -846,13 +837,10 @@ a {
 .info-title {
   font-weight: 600;
   color: #2F327D;
-  // margin-bottom: 17px;
   font-family: Poppins;
   font-size: 44px;
   line-height: 79.2px;
   letter-spacing: 0%;
-  // display: flex;
-  // align-items: center;
 
 }
 
@@ -903,7 +891,6 @@ a {
   border-radius: 20px;
   border-width: 1px;
   margin-right: 50px;
-
 
 }
 
@@ -1605,18 +1592,16 @@ a {
     }
   }
 
-//dropbox
-//asse
 
 .assessments-container {
-  width: 1440px; // Fixed width for balance, similar to your previous request
-  max-width: 100%; // Ensure it doesn’t exceed viewport on smaller screens
-  margin: 0 auto; // Center the container
-  padding: 80px 60px; // Add padding for spacing
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto; 
+  padding: 80px 60px; 
   display: flex;
   align-items: center;
-  gap: 352px; // Space between visual and content
-  position: relative; // For positioning decorations
+  gap: 352px; 
+  position: relative; 
 
   @media (max-width: 1200px) {
     flex-direction: column;
@@ -1631,9 +1616,9 @@ a {
 }
 
 .assessments-visual {
-  flex: 1; // Take up approximately half the width
+  flex: 1; 
   position: relative;
-  padding: 20px; // Add padding for spacing
+  padding: 20px; 
   width: 465.6242370605469px;
   height: 562.3897094726562px;
   border-radius: 18.21px;
@@ -1738,10 +1723,10 @@ a {
 
       i {
         font-size: 18px;
-        color: #22B87D; // Green for check, red for cross
+        color: #22B87D;
 
         &.fa-times-circle {
-          color: #F77E8A; // Red for cross
+          color: #F77E8A; 
         }
       }
     }
@@ -1749,11 +1734,11 @@ a {
 
   .assessment-image {
     width: 100%;
-    max-width: 400px; // Adjust size to match your image
+    max-width: 400px; 
     height: auto;
-    border-radius: 10px; // Match your design
+    border-radius: 10px; 
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // Subtle shadow
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
 
@@ -1810,15 +1795,6 @@ a {
     }
   }
 
-  // .visual-decorations {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 500%;
-  //   height: 100%;
-  //   z-index: 1; 
-  // }
-
 }
 
 .circle-12 {
@@ -1862,7 +1838,7 @@ a {
   position: absolute;
   top: 52%;
   left: 42%;
-  // z-index: 1;
+
 }
 
 
@@ -1901,7 +1877,6 @@ a {
   }
 }
 
-// Responsive Design
 @media (max-width: 1200px) {
 
   .assessments-visual,
@@ -1917,11 +1892,11 @@ a {
   }
 
   .assessments-visual .assessment-image {
-    max-width: 300px; // Reduce image size on medium screens
+    max-width: 300px; 
   }
 
   .visual-decorations .decoration-dot {
-    display: none; // Hide decorations on smaller screens for simplicity
+    display: none; 
   }
 }
 
@@ -1932,28 +1907,28 @@ a {
   }
 
   .assessments-title {
-    font-size: 24px; // Reduce title size on mobile
+    font-size: 24px; 
   }
 
   .assessments-description {
-    font-size: 14px; // Reduce description size on mobile
+    font-size: 14px; 
   }
 
   .assessments-visual .assessment-image {
-    max-width: 250px; // Further reduce image size on mobile
+    max-width: 250px; 
   }
 }
 
 .discussions-container {
-  width: 1440px; // Fixed width for balance, similar to your previous requests
-  max-width: 100%; // Ensure it doesn’t exceed viewport on smaller screens
-  margin: 0 auto; // Center the container
-  padding: 80px 20px; // Add padding for spacing
+  width: 1440px; 
+  max-width: 100%; 
+  margin: 0 auto;
+  padding: 80px 20px; 
   display: flex;
   align-items: center;
-  gap: 250px; // Space between visual and content
-  position: relative; // For positioning decorations
-margin-top: 150px;
+  gap: 250px; 
+  position: relative; 
+  margin-top: 150px;
   @media (max-width: 1200px) {
     flex-direction: column;
     padding: 40px 20px;
@@ -1967,10 +1942,10 @@ margin-top: 150px;
 }
 
 .discussions-visual {
-  flex: 1; // Take up approximately half the width
-  max-width: 50%; // Ensure it doesn’t exceed half the container
+  flex: 1; 
+  max-width: 50%; 
   position: relative;
-  padding: 20px; // Add padding for spacing
+  padding: 20px; 
 
   .discussion-card {
     padding: 20px;
@@ -2152,7 +2127,6 @@ margin-top: 150px;
 
       img {
         width: 10.40002155303955px;
-        /* Kích thước icon */
         height: 11.200762748718262px;
         border-radius: 0.8px;
       }
@@ -2162,7 +2136,7 @@ margin-top: 150px;
       position: absolute;
       height: 94px;
       width: 94px;
-      background-color: rgba(249, 249, 249, 0.8); // 80% độ đục, 20% trong suốt
+      background-color: rgba(249, 249, 249, 0.8); 
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -2239,7 +2213,7 @@ margin-top: 150px;
     position: absolute;
     height: 112.98113250732422px;
     width: 112.98113250732422px;
-    background-color: #23BDEE; // 80% độ đục, 20% trong suốt
+    background-color: #23BDEE; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -2312,11 +2286,8 @@ margin-top: 150px;
     width: 0;
     height: 0;
     border-left: 14px solid transparent;
-    /* Một nửa chiều rộng mong muốn */
     border-right: 14px solid transparent;
-    /* Một nửa chiều rộng mong muốn */
     border-bottom: 26px solid #FBA333;
-    /* Chiều cao tam giác */
     position: absolute;
     top: 22%;
     right: -17%;
@@ -2331,7 +2302,7 @@ margin-top: 150px;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; // Below the card
+    z-index: -1; 
 
     .decoration-dot {
       position: absolute;
@@ -2354,16 +2325,16 @@ margin-top: 150px;
       border-bottom: 20px solid transparent;
       border-left: 30px solid var(--light-blue);
       top: 50%;
-      right: -30px; // Position outside the card
+      right: -30px; 
       transform: translateY(-50%);
     }
   }
 }
 
 .discussions-content {
-  flex: 1; // Take up approximately half the width
-  max-width: 50%; // Ensure it doesn’t exceed half the container
-  padding: 20px; // Add padding for spacing
+  flex: 1; 
+  max-width: 50%; 
+  padding: 20px; 
 
   .discussions-title {
     width: 274px;
@@ -2394,7 +2365,6 @@ margin-top: 150px;
   }
 }
 
-// Responsive Design
 @media (max-width: 1200px) {
 
   .discussions-visual,
@@ -2408,13 +2378,13 @@ margin-top: 150px;
   }
 
   .discussions-visual .user-image {
-    width: 100px; // Reduce image size on medium screens
+    width: 100px;
     height: 100px;
   }
 
   .visual-decorations .decoration-dot,
   .visual-decorations .decoration-arrow {
-    display: none; // Hide decorations on smaller screens for simplicity
+    display: none; 
   }
 }
 
@@ -2425,27 +2395,27 @@ margin-top: 150px;
   }
 
   .discussions-title {
-    font-size: 24px; // Reduce title size on mobile
+    font-size: 24px;
   }
 
   .discussions-description {
-    font-size: 14px; // Reduce description size on mobile
+    font-size: 14px; 
   }
 
   .discussions-visual .user-image {
-    width: 80px; // Further reduce image size on mobile
+    width: 80px; 
     height: 80px;
   }
 }
 .Management {
-  display: flex; /* Sử dụng flexbox */
-  align-items: center; /* Căn giữa theo chiều dọc */
-  justify-content: center; /* Căn giữa theo chiều ngang */
-  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
 }
 .edu-section-container,
 .edu-section-image {
-  flex: 1; /* Chia đều không gian */
+  flex: 1;
 }
 .edu-section-container {
   padding: 80px 0;
@@ -2773,20 +2743,17 @@ margin-top: 150px;
     }
   }
 }
-/*# sourceMappingURL=main.css.map */
 
 
-
-//tools
 .tools-container {
-  width: 1440px; // Fixed width as requested
-  max-width: 100%; // Ensure it doesn’t exceed viewport on smaller screens
-  margin: 0 auto; // Center the container
-  padding: 80px 80px; // Add padding for spacing
+  width: 1440px; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 80px 80px; 
   display: flex;
   align-items: center;
-  gap: 250px; // Space between content and visual
-  position: relative; // For positioning decorations
+  gap: 250px; 
+  position: relative; 
 
   @media (max-width: 1200px) {
     flex-direction: column;
@@ -3007,7 +2974,6 @@ margin-top: 150px;
   }
 }
 
-//
 .edu-integration-section {
   font-family: "Nunito Sans";
   line-height: 1.6;
@@ -3158,7 +3124,7 @@ padding: 20px 40px;
 }
 
 .edu-logo-item:nth-child(2) img {
-  transform: translateY(40px) translateX(20px); /* Điều chỉnh giá trị 20px để di chuyển sang phải */
+  transform: translateY(40px) translateX(20px); 
   width: 130px;
   height: 121px;
 }
@@ -3175,7 +3141,7 @@ padding: 20px 40px;
 
 .edu-logo-item:nth-child(4) img {
   position: relative;
-  transform: translateY(20px) translateX(150px); /* Điều chỉnh giá trị 50px để di chuyển sang phải */
+  transform: translateY(20px) translateX(150px); 
   width: 159px;
   height: 159px;
 }
@@ -3203,8 +3169,6 @@ padding: 20px 40px;
 }
 
 
-//dropbox
-//sk
 
 .sk-testimonial-section {
   font-family: 'Nunito Sans';
@@ -3237,7 +3201,6 @@ padding: 20px 40px;
   margin-right: auto;
 }
 
-/* Phần nội dung bên trái */
 .sk-testimonial-content {
   flex: 1;
   max-width: 564px;
@@ -3349,28 +3312,25 @@ margin-bottom: 26px;
 }
 
 
-
-/* Thêm khoảng cách cho phần tử cha */
 .sk-testimonial-content {
-  margin-bottom: 30px; /* Thêm khoảng cách dưới */
+  margin-bottom: 30px; 
 }
-/* Thêm quy tắc đặc biệt để tránh bị ghi đè */
+
 .sk-cta-button .sk-arrow-icon {
   margin-left: 0 !important;
   font-size: 16px !important;
 }
 
-/* Phần testimonial slider bên phải */
 .sk-testimonial-slider {
   flex: 1;
   position: relative;
   max-width: 370px;
   
-  margin: 0 auto; /* Căn giữa slider */
+  margin: 0 auto; 
   display: flex;
-  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  justify-content: center; 
   align-items: center;
-  overflow: visible; /* Căn giữa nội dung theo chiều dọc */
+  overflow: visible; 
 }
 
 
@@ -3512,10 +3472,6 @@ height: 20px;
 }
 
 
-
-
-
-/* Responsive */
 @media (max-width: 992px) {
   .sk-testimonial-container {
     flex-direction: column;
@@ -3539,8 +3495,7 @@ height: 20px;
     max-width: 100%;
   }
 }
-//sk
-//hinh
+
 .container2 {
   position: relative;
   
@@ -3587,7 +3542,6 @@ height: 20px;
 
       img {
         width: 7.2095417976379395px;
-        /* Kích thước icon */
         height: 7.764307022094727px;
       }
     }
@@ -3621,7 +3575,6 @@ height: 20px;
 
       img {
         width: 7.2095417976379395px;
-        /* Kích thước icon */
         height: 7.764307022094727px;
       }
     }
@@ -3656,7 +3609,6 @@ height: 20px;
 
       img {
         width: 8.753340721130371px;
-        /* Kích thước icon */
         height: 9.427122116088867px;
       }
     }
@@ -3690,13 +3642,11 @@ height: 20px;
 
       img {
         width: 10.40002155303955px;
-        /* Kích thước icon */
         height: 11.200762748718262px;
         border-radius: 0.8px;
       }
     }
 
-    /* Định vị từng name */
     #name1 {
       top: 39%;
       left: 59%;
@@ -3797,8 +3747,8 @@ height: 20px;
       }
 
       &:hover {
-        transform: translateY(-2px); // Slight lift on hover for 3D effect
-        box-shadow: 0 6px 20px rgba(52, 101, 225, 0.4); // Enhanced shadow on hover
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(52, 101, 225, 0.4); 
       }
 
     }
@@ -3833,25 +3783,25 @@ height: 20px;
       }
 
       &:hover {
-        transform: translateY(-2px); // Slight lift on hover for 3D effect
-        box-shadow: 0 6px 20px rgba(52, 101, 225, 0.4); // Enhanced shadow on hover
+        transform: translateY(-2px); 
+        box-shadow: 0 6px 20px rgba(52, 101, 225, 0.4); 
       }
     }
   }
 
   .circle-1 {
-    z-index: 4; // Higher than the z-index of .img1 (1) and .img2 (2)
+    z-index: 4; 
   }
 
   .circle-2 {
-    z-index: 5; // Ensure it stays on top of .circle-1 if needed
+    z-index: 5; 
   }
 
   .circle-1 {
     position: absolute;
     height: 94px;
     width: 94px;
-    background-color: rgba(249, 249, 249, 0.8); // 80% độ đục, 20% trong suốt
+    background-color: rgba(249, 249, 249, 0.8); 
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -3925,8 +3875,8 @@ height: 20px;
 
 
   .img1 {
-    position: relative; /* Để làm mốc */
-    z-index: 2; /* Ảnh chính nằm giữa */
+    position: relative; 
+    z-index: 2; 
 }
  
   .circle-3 {
@@ -3982,16 +3932,15 @@ height: 20px;
   }
  
 }
-//hinh
-//newwwww
+
 .skilline-resource-updates {
   font-family: 'Nunito Sans';
   width: 1557px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Canh giữa theo chiều ngang */
-  margin: 0 auto; /* Canh giữa trên trang */
+  align-items: center; 
+  margin: 0 auto;
   margin-bottom: 160px;
   margin-top: 150px;
 }
@@ -4049,20 +3998,18 @@ height: 20px;
   align-items: center;
   gap: 120px;
   width: 100%;
-  max-width: 1557px; /* Giới hạn chiều rộng */
-  margin: 0 auto; /* Canh giữa */
+  max-width: 1557px; 
+  margin: 0 auto;
   align-items: stretch;
 }
 
-/* Cột đầu tiên - Card dọc */
 .skilline-main-update-item {
   background-color: white;
   overflow: hidden;
-  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  width: 640px !important; /* Sử dụng !important để ghi đè */
+  width: 640px !important; 
   height: 690px !important;
   flex-shrink: 0;
 
@@ -4092,7 +4039,7 @@ height: 20px;
 
 .skilline-main-update-tag {
   display: flex;
-  justify-content: center; /* Canh giữa theo chiều ngang */
+  justify-content: center; 
   align-items: center; 
   background-color: #F4C467;
   color: #252641;
@@ -4151,7 +4098,6 @@ P.killine-update-description-main{
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
   width: 797px;
@@ -4198,7 +4144,7 @@ P.killine-update-description-main{
   border-radius: 20px;
 
   display: flex;
-  justify-content: center; /* Canh giữa theo chiều ngang */
+  justify-content: center;
   align-items: center;
  
 height: 27px;
@@ -4288,7 +4234,6 @@ border-radius: 80px;
 
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .skilline-updates-grid {
     grid-template-columns: 1fr;
@@ -4305,12 +4250,10 @@ border-radius: 80px;
     width: 100%;
   }
 }
-//newww
-  //footer
 
   .skilline-page-footer {
     width: 1920px;
-    // height: 593px;
+
     background-color: #252641;
     color: white;
     font-family: 'Poppins';
@@ -4353,7 +4296,7 @@ border-radius: 80px;
 
 .skilline-footer-logo-name {
   position: relative;
-  left: 10px; /* Adjust based on diamond size */
+  left: 10px; 
  
   color: white;
  
@@ -4366,7 +4309,7 @@ letter-spacing: 4%;
 }
 .skilline-footer-brand-text {
   position: relative;
-  left: 25px; /* Điều chỉnh để chữ đè lên logo */
+  left: 25px; 
   font-family: 'Poppins';
   font-size: 32px;
   font-weight: 700;
@@ -4374,7 +4317,7 @@ letter-spacing: 4%;
 
   letter-spacing: 4%;
 
-  z-index: 10; /* Đảm bảo chữ nằm trên logo */
+  z-index: 10; 
 }
 
 .skilline-footer-tagline {
@@ -4401,7 +4344,7 @@ letter-spacing: 4%;
 
 .skilline-footer-content {
     text-align: center;
-    // padding: 40px 20px;
+
 }
 
 .skilline-footer-newsletter {
