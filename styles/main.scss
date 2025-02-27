@@ -3461,7 +3461,7 @@ margin-left: 5px;
     color: #696984;
   }
 }
-/* Responsive cho tools-container */
+
 @media (max-width: 1200px) {
   .tools-container {
     flex-direction: column; 
@@ -3491,6 +3491,7 @@ margin-left: 5px;
     display: flex;
     justify-content: center; 
     margin: 0 auto; 
+  }
 
   .teacher-image {
     width: 100%; 
@@ -4256,10 +4257,10 @@ margin-left: 5px;
 /* Responsive cho tools-container */
 @media (max-width: 1200px) {
   .tools-container {
-    flex-direction: column;
+    flex-direction: column; 
     gap: 40px;
     padding: 40px 0; 
-    align-items: center; 
+    align-items: center;
     justify-content: center; 
     margin: 0 auto; 
     max-width: 1200px; 
@@ -4268,22 +4269,22 @@ margin-left: 5px;
 
   .tools-content {
     order: 1; 
-    width: 100%;
-    max-width: 600px;
+    width: 100%; 
+    max-width: 600px; 
     height: auto; 
     padding: 10px 0; 
     text-align: center; 
     margin: 0 auto; 
-    display: flex; 
+    display: flex;
     flex-direction: column; 
     align-items: center; 
   }
 
   .tools-visual {
-    order: 2;
-    width: 100%;
-    max-width: 350px;
-    padding: 10px 0;
+    order: 2; 
+    width: 100%; 
+    max-width: 350px; 
+    padding: 10px 0; 
     display: flex;
     justify-content: center; 
     margin: 0 auto; 
@@ -4291,7 +4292,7 @@ margin-left: 5px;
 
   .teacher-image {
     width: 100%; 
-    max-width: 350px;
+    max-width: 350px; 
     height: auto; 
     left: 0; 
     margin: 0 auto; 
@@ -4305,10 +4306,10 @@ margin-left: 5px;
   }
 
   .tools-description {
-    font-size: 18px; 
+    font-size: 18px;
     line-height: 32px;
     width: 100%; 
-    max-width: 500px;
+    max-width: 500px; 
     height: auto; 
     margin: 0 auto; 
   }
@@ -4354,7 +4355,7 @@ margin-left: 5px;
   .circle-8 {
     top: 12%; 
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%); 
     width: 20px; 
     height: 20px;
   }
@@ -4377,10 +4378,10 @@ margin-left: 5px;
 
   .tools-content {
     max-width: 500px; 
-  
+  }
 
   .tools-visual {
-    max-width: 300px;
+    max-width: 300px; 
   }
 
   .teacher-image {
@@ -4388,7 +4389,7 @@ margin-left: 5px;
   }
 
   .tools-title {
-    font-size: 28px; 
+    font-size: 28px;
     line-height: 42px;
     margin: 0 auto; 
     width: auto; 
@@ -4404,7 +4405,7 @@ margin-left: 5px;
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px; /* Giảm kích thước */
+    width: 60px;
     height: 60px;
     
     .dot1 {
@@ -4422,7 +4423,7 @@ margin-left: 5px;
     top: 15%;
     right: 50%;
     transform: translateX(50%);
-    width: 60px; /* Giảm kích thước */
+    width: 60px;
     height: 60px;
     
     .dot2 {
@@ -4439,7 +4440,7 @@ margin-left: 5px;
   .circle-7,
   .circle-8,
   .circle-9 {
-    width: 15px; 
+    width: 15px;
     height: 15px;
   }
 
@@ -4470,7 +4471,7 @@ margin-left: 5px;
   }
 
   .tools-title {
-    font-size: 22px;
+    font-size: 22px; 
     line-height: 32px;
     margin: 0 auto; 
     width: auto; 
@@ -4486,7 +4487,7 @@ margin-left: 5px;
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 50px; 
+    width: 50px;
     height: 50px;
     
     .dot1 {
@@ -4504,7 +4505,7 @@ margin-left: 5px;
     top: 15%;
     right: 50%;
     transform: translateX(50%);
-    width: 50px; 
+    width: 50px; /* Giảm kích thước thêm */
     height: 50px;
     
     .dot2 {
@@ -4521,16 +4522,16 @@ margin-left: 5px;
   .circle-7,
   .circle-8,
   .circle-9 {
-    width: 12px; 
+    width: 12px; /* Giảm kích thước vòng tròn nhỏ */
     height: 12px;
   }
 
   .circle-10 {
-    width: 80px; 
+    width: 80px; /* Giảm kích thước vòng tròn lớn */
     height: 80px;
     top: 2%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Căn giữa */
   }
 }
 
@@ -4709,9 +4710,7 @@ padding: 20px 40px;
   height: auto;
 }
 
-/* Responsive CSS hoàn chỉnh cho Education Integration Section */
 
-/* Base responsive adjustments */
 @media screen and (max-width: 1500px) {
   .edu-integration-container {
     width: 100%;
@@ -6530,7 +6529,9 @@ border-radius: 80px;
   
 
 }
+/* Responsive styles for Skilline Resources & Updates Section */
 
+/* Base responsive settings - applied to all devices */
 @media screen and (max-width: 1600px) {
   .skilline-resource-updates {
     width: 100%;
@@ -6543,14 +6544,14 @@ border-radius: 80px;
   }
 }
 
-
+/* Large screens (1200px - 1599px) */
 @media screen and (max-width: 1599px) {
   .skilline-updates-grid {
     gap: 60px;
   }
 }
 
-
+/* Medium/large screens (992px - 1199px) */
 @media screen and (max-width: 1199px) {
   .skilline-updates-grid {
     gap: 40px;
@@ -6581,6 +6582,7 @@ border-radius: 80px;
     width: auto;
   }
 }
+
 
 @media screen and (max-width: 991px) {
   .skilline-resource-updates {
@@ -6643,6 +6645,7 @@ border-radius: 80px;
     height: auto;
   }
 }
+
 
 @media screen and (max-width: 767px) {
   .skilline-resource-updates {
@@ -6749,6 +6752,7 @@ border-radius: 80px;
     line-height: 26px;
   }
 }
+
 
 @media screen and (max-width: 480px) {
   .skilline-secondary-updates {
