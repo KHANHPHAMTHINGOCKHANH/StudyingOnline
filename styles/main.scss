@@ -299,6 +299,13 @@ Span{
     height: 100%;
     border-radius: 20px;
     transform: scale(0.95);
+
+
+    @media (max-width: 768px) {
+      .student-image img {
+        width: 20px;
+    }
+  }
 }
 .badge {
     position: absolute;
@@ -601,13 +608,14 @@ letter-spacing: 0%;
     object-fit: contain;
     flex-shrink: 0;
 }
-/* Responsive cho máy tính bảng (tablet) */
+
 @media (max-width: 1024px) {
-  .trusted-text {
-    font-size: 24px; /* Giảm kích thước font */
-    line-height: 1.3; /* Điều chỉnh chiều cao dòng */
-    margin-top: 80px; /* Giảm khoảng cách phía trên */
-    margin-bottom: 24px; /* Giảm khoảng cách phía dưới */
+  h3.trusted-text {
+    font-size: 16px;
+    line-height: 1.3; 
+    margin-top: 80px;
+    margin-bottom: 24px; 
+    padding: 0 20px;
 }
   .trusted-logos {
       gap: 30px; /* Giảm khoảng cách giữa các logo */
@@ -647,12 +655,13 @@ letter-spacing: 0%;
 
 /* Responsive cho điện thoại di động (mobile) */
 @media (max-width: 768px) {
-  .trusted-text {
-    font-size: 20px; /* Giảm kích thước font */
-    line-height: 1.2; /* Điều chỉnh chiều cao dòng */
-    margin-top: 60px; /* Giảm khoảng cách phía trên */
-    margin-bottom: 20px; /* Giảm khoảng cách phía dưới */
-}
+  h3.trusted-text {
+    text-align: center;
+    margin: 40px 0 16px 0; 
+    width: 100%; 
+    position: relative; 
+    left: 0; 
+  }
 
   .trusted-logos {
       flex-wrap: wrap; /* Cho phép các logo xuống dòng */
@@ -686,52 +695,55 @@ letter-spacing: 0%;
   }
 
   .trusted-logo[alt="Grab"] {
-      width: 90px; /* Điều chỉnh chiều rộng logo Grab */
-      margin-top: -6px; /* Điều chỉnh khoảng cách phía trên */
+      width: 90px; 
+      margin-top: -6px; 
   }
 }
 
-/* Responsive cho điện thoại di động nhỏ (small mobile) */
+
 @media (max-width: 480px) {
-  .trusted-text {
-    font-size: 18px; /* Giảm kích thước font */
-    line-height: 1.1; /* Điều chỉnh chiều cao dòng */
-    margin-top: 40px; /* Giảm khoảng cách phía trên */
-    margin-bottom: 16px; /* Giảm khoảng cách phía dưới */
-}
+  h3.trusted-text {
+    text-align: center;
+    margin: 40px 0 16px 0; 
+    width: 100%; 
+    position: relative; 
+    left: 0; 
+  }
+  
+
   .trusted-logos {
-      gap: 15px; /* Giảm khoảng cách giữa các logo */
+      gap: 15px; 
   }
 
   .trusted-logo {
-      max-height: 25px; /* Giảm kích thước logo */
+      max-height: 25px; 
   }
 
   .trusted-logo[alt="Google"] {
-      width: 100px; /* Điều chỉnh chiều rộng logo Google */
+      width: 100px; 
   }
 
   .trusted-logo[alt="Netflix"] {
-      width: 90px; /* Điều chỉnh chiều rộng logo Netflix */
+      width: 90px; 
   }
 
   .trusted-logo[alt="Airbnb"] {
-      width: 100px; /* Điều chỉnh chiều rộng logo Airbnb */
+      width: 100px; 
   }
 
   .trusted-logo[alt="Amazon"] {
-      width: 90px; /* Điều chỉnh chiều rộng logo Amazon */
-      margin-top: 6px; /* Điều chỉnh khoảng cách phía trên */
+      width: 90px; 
+      margin-top: 6px; 
   }
 
   .trusted-logo[alt="Facebook"] {
-      width: 120px; /* Điều chỉnh chiều rộng logo Facebook */
-      margin-top: -3px; /* Điều chỉnh khoảng cách phía trên */
+      width: 120px; 
+      margin-top: -3px; 
   }
 
   .trusted-logo[alt="Grab"] {
-      width: 70px; /* Điều chỉnh chiều rộng logo Grab */
-      margin-top: -5px; /* Điều chỉnh khoảng cách phía trên */
+      width: 70px; 
+      margin-top: -5px; 
   }
 }
 .container-software-section {
@@ -789,9 +801,14 @@ letter-spacing: 0%;
   margin: 0 auto;
 
   @media screen and (max-width: 1200px) {
-    .software-title {
-        font-size: 32px;
-    }
+    h2.software-title {
+      font-size: 32px;
+      text-align: center; /* Canh giữa nội dung text */
+      margin-left: auto; /* Tự động tính margin bên trái */
+      margin-right: auto; /* Tự động tính margin bên phải */
+      width: 100%; /* Sử dụng toàn bộ chiều rộng có sẵn */
+      display: block; /* Đảm bảo hiển thị dạng block */
+  }
 
     .software-description {
         font-size: 22px;
@@ -809,9 +826,14 @@ letter-spacing: 0%;
 }
 
 @media screen and (max-width: 768px) {
-  .software-title {
-      font-size: 24px;
-  }
+  h2.software-title {
+    font-size: 32px;
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%; 
+    display: block; 
+}
 
   .software-description {
       font-size: 16px;
@@ -829,14 +851,16 @@ letter-spacing: 0%;
   }
 }
 
-/* Additional Responsive Tweaks */
+
 @media screen and (max-width: 480px) {
   .container-software-section {
       padding: 0 10px;
   }
 
-  .software-title {
-      font-size: 18px;
+  h2.software-title {
+    width: 100%; 
+    font-size: 15px; 
+    margin-bottom: 10px; 
   }
 
   .software-description {
@@ -907,7 +931,7 @@ letter-spacing: 0%;
   display: flex;
   justify-content: center;
   gap: 40px;
-  max-width: 1200px; // Giới hạn giống các container khác
+  max-width: 1200px; 
   margin: 101px auto 0;
   
   @media (max-width: 992px) {
@@ -2038,8 +2062,11 @@ margin-left: 5px;
   }
 
   .dot-decoration {
-    left: 50%;
+    left: 14%;
     transform: translateX(-50%);
+    top: -3%;
+    width: 50px;
+    height: 50px;
   }
 
   .main-title,
@@ -2447,7 +2474,53 @@ margin-left: 5px;
     color: #2F327D;
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 1200px) {
+    .platform-title {
+      font-size: 36px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+  }
   
+  /* Màn hình trung bình (laptop và tablet lớn) */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .platform-title {
+      font-size: 32px;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+  }
+  
+  /* Màn hình tablet */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .platform-title {
+      font-size: 28px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      padding: 0 20px;
+    }
+  }
+  
+  /* Màn hình mobile lớn */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .platform-title {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      padding: 0 15px;
+    }
+  }
+  
+  /* Màn hình mobile nhỏ */
+  @media screen and (max-width: 575px) {
+    .platform-title {
+      font-size: 22px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      padding: 0 10px;
+      letter-spacing: -0.2px; /* Giảm khoảng cách chữ trên màn hình nhỏ nếu cần */
+    }
+  }
   .platform-highlight {
     color: #F48C06;
   }
@@ -2462,7 +2535,53 @@ margin-left: 5px;
     margin: 0 auto 60px;
     color: #696984;
   }
-
+  @media screen and (min-width: 1200px) {
+    .platform-subtitle {
+      font-size: 24px;
+      line-height: 43.2px;
+      margin-bottom: 60px;
+    }
+  }
+  
+  /* Màn hình trung bình (laptop và tablet lớn) */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .platform-subtitle {
+      font-size: 22px;
+      line-height: 38px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  /* Màn hình tablet */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .platform-subtitle {
+      font-size: 20px;
+      line-height: 34px;
+      margin-bottom: 40px;
+    
+    }
+  }
+  
+  /* Màn hình mobile lớn */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .platform-subtitle {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 35px;
+    
+    }
+  }
+  
+  /* Màn hình mobile nhỏ */
+  @media screen and (max-width: 575px) {
+    .platform-subtitle {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 30px;
+     
+      letter-spacing: -0.2px; /* Giảm khoảng cách chữ trên màn hình nhỏ */
+    }
+  }
   .feature-item {
     display: flex;
     align-items: center;
@@ -2765,16 +2884,6 @@ margin-left: 5px;
   gap: 352px; 
   position: relative; 
 
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 30px;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 20px;
-  }
 }
 
 .assessments-visual {
@@ -3039,47 +3148,6 @@ margin-left: 5px;
   }
 }
 
-@media (max-width: 1200px) {
-
-  .assessments-visual,
-  .assessments-content {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .assessments-visual .quiz-card,
-  .assessments-visual .assessment-image,
-  .assessments-visual .success-message {
-    max-width: 100%;
-  }
-
-  .assessments-visual .assessment-image {
-    max-width: 300px; 
-  }
-
-  .visual-decorations .decoration-dot {
-    display: none; 
-  }
-}
-
-@media (max-width: 768px) {
-  .assessments-container {
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .assessments-title {
-    font-size: 24px; 
-  }
-
-  .assessments-description {
-    font-size: 14px; 
-  }
-
-  .assessments-visual .assessment-image {
-    max-width: 250px; 
-  }
-}
 
 .discussions-container {
   width: 1440px; 
